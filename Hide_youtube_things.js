@@ -12,7 +12,7 @@
 $( document ).ready(function() {
 
 
-    function ocultando(var s){
+    function ocultando(s){
         if( $('#' + s).length)
         {
             console.log('Ocultando ' + s);
