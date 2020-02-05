@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         Hide youtube related
+// @name         Hide youtube good, but insecure.
 // @namespace    bepitic
 // @version      0.1
 // @description  Deactivate recomendations from youtube
