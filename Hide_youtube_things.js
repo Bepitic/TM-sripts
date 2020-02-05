@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Hide youtube things
 // @namespace    bepitic
-// @version      0.2
+// @version      0.3
 // @description  Hide related vid and comments section.
 // @author       Bepitic
 // @match        https://www.youtube.com/**
