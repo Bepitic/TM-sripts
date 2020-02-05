@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Hide youtube things
 // @namespace    bepitic
-// @version      0.5
+// @version      0.6
 // @description  Hide related vid and comments section.
 // @author       Bepitic
 // @match        https://www.youtube.com/**
@@ -13,14 +13,18 @@ $( document ).ready(function() {
 
 
     function ocultando(var s){
-        if( $('#secondary').length)
+        if( $('#' + s).length)
         {
             console.log('Ocultando ' + s);
+
+            document.getElementById(s).style.display = "none";
             $(s).style.display = "none";
         }else{
             setTimeout(function() { ocultando(s);}, 1000);
         }
     }
 
-    setTimeout(function() { ocultando('#secondary');}, 1000);
+    setTimeout(function() { ocultando('secondary');}, 1000);
+    //setTimeout(function() { ocultando('related');}, 1000);
+    setTimeout(function() { ocultando('sections');}, 1000);
 });
