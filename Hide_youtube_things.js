@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Hide youtube things
 // @namespace    bepitic
-// @version      0.7
+// @version      0.8
 // @description  Hide related vid and comments section, in the most overpowered form.
 // @author       Bepitic
 // @match        https://www.youtube.com/**
@@ -25,6 +25,6 @@ $( document ).ready(function() {
     }
 
     setTimeout(function() { ocultando('secondary');}, 1000);
-    //setTimeout(function() { ocultando('related');}, 1000);
+    setTimeout(function() { ocultando('related');}, 1000);
     setTimeout(function() { ocultando('sections');}, 1000);
 });
