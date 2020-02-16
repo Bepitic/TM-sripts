@@ -18,7 +18,7 @@ $( document ).ready(function() {
             console.log('Ocultando ' + s);
 
             document.getElementById(s).style.display = "none";
-            setTimeout(() => { $(s).style.display = "none"; }, 2000);
+            setTimeout(() => { $(s).style.display = "none"; }, 1000);
         }else{
             setTimeout(function() { ocultando(s);}, 1000);
         }
