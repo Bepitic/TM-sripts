@@ -27,5 +27,5 @@ $( document ).ready(function() {
     // Quitar secondary solo si no tiene un hijo que sea id=chat (un livestream)
     setTimeout(function() { ocultando('secondary > :not(#chat)');}, 1000);
     setTimeout(function() { ocultando('related');}, 1000);
-    setTimeout(function() { ocultando('sections');}, 1000);
+    setTimeout(function() { ocultando(':not(#guide-renderer) < sections');}, 1000);
 });
