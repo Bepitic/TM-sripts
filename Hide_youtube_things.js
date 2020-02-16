@@ -18,7 +18,7 @@ $( document ).ready(function() {
             console.log('Ocultando ' + s);
 
             document.getElementById(s).style.display = "none";
-            $(s).style.display = "none";
+            setTimeout(() => { $(s).style.display = "none"; }, 2000);
         }else{
             setTimeout(function() { ocultando(s);}, 1000);
         }
@@ -27,5 +27,6 @@ $( document ).ready(function() {
     // Quitar secondary solo si no tiene un hijo que sea id=chat (un livestream)
     setTimeout(function() { ocultando('secondary > :not(#chat)');}, 1000);
     setTimeout(function() { ocultando('related');}, 1000);
-    setTimeout(function() { ocultando(':not(#guide-renderer) < sections');}, 1000);
+    setTimeout(function() { ocultando('comments');}, 1000);
+    //setTimeout(function() { ocultando(':not(#guide-renderer) < sections');}, 1000);
 });
